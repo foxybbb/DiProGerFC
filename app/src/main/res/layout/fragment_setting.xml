@@ -1,16 +1,240 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SettingFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Settings"
-        android:textSize="30sp"/>
 
-</FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+        <!--    Servo 1 -->
+            <LinearLayout
+                        android:layout_marginTop="100dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="50dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/textViewServo1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="Servo_1:"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/textViewMin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Min: "
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginStart="10dp"/>
+
+                        <EditText
+                            android:id="@+id/editTextNumberMinServo1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:inputType="number" />
+
+                        <TextView
+                            android:id="@+id/textView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Max: "
+                            android:layout_marginEnd="10dp"/>
+
+                        <EditText
+                            android:id="@+id/editTextNumberMaxServo1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:inputType="number" />
+                    </LinearLayout>
+
+        <!--  Servo 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="50dp"
+            >
+
+            <TextView
+                android:id="@+id/textViewServo2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Servo_2:"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/textViewMin2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Min: "
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"/>
+
+            <EditText
+                android:id="@+id/editTextNumberMinServo2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Max: "
+                android:layout_marginEnd="10dp"/>
+
+            <EditText
+                android:id="@+id/editTextNumberMaxServo2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number" />
+        </LinearLayout>
+        <!--  Servo 3 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="50dp"
+            >
+
+            <TextView
+                android:id="@+id/textViewServo3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Servo_3:"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/textViewMin3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Min: "
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"/>
+
+            <EditText
+                android:id="@+id/editTextNumberMinServo3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Max: "
+                android:layout_marginEnd="10dp"/>
+
+            <EditText
+                android:id="@+id/editTextNumberMaxServo3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number" />
+        </LinearLayout>
+        <!-- Servo 4 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="50dp"
+            >
+
+            <TextView
+                android:id="@+id/textViewServo4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Servo_4:"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/textViewMin4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Min: "
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"/>
+
+            <EditText
+                android:id="@+id/editTextNumberMinServo4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Max: "
+                android:layout_marginEnd="10dp"/>
+
+            <EditText
+                android:id="@+id/editTextNumberMaxServo4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number" />
+        </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/linearLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    tools:ignore="UselessParent"
+                    android:layout_marginStart="10dp">
+
+                    <Button
+                        android:id="@+id/btnSave"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:text="Save" />
+
+                    <Button
+                        android:id="@+id/btnLoad"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Load" />
+
+                </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
