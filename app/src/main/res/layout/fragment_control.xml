@@ -6,11 +6,92 @@
     tools:context=".ControlFragment">
 
     <!-- TODO: Update blank fragment layout -->
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="Control"
-        android:textSize="30sp"/>
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:id="@+id/editTextIPAdress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:height="48dp"
+                android:width="100dp"
+                android:text="IP Adress" />
+
+            <Button
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="20dp"
+                android:id="@+id/btnConnect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Connect"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/Xvalue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Yaw:"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/Yvalue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pitch:"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/Zvalue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Row:"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnResetPosition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ResetPosition"
+                android:layout_marginStart="200dp"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
 
 </FrameLayout>
